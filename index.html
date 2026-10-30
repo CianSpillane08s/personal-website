@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cian Spillane</title>
+<meta name="description" content="Cian Spillane, a 17-year-old student writing about startups, growth, AI and markets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="name" href="index.html">Cian Spillane</a>
+  <nav>
+    <a href="essays.html">Essays</a>
+    <a href="books.html">Books</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <h1>Hi, I'm Cian.</h1>
+  <p>I'm a 17-year-old secondary school student in Ireland. I'm interested in startups, macroeconomics and growth theory, generative AI, financial markets, and how technological disruption changes the way we live and work.</p>
+  <p class="muted">This site is where I keep my essays, notes on what I read, and the things I build.</p>
+
+  <h2>What I read about</h2>
+  <div class="map-wrap">
+    <div id="map"></div>
+    <div class="map-foot">
+      <div id="map-caption" aria-live="polite"></div>
+      <div class="legend"><span><i class="read"></i>read</span><span><i class="reading"></i>reading</span><span><i></i>next</span></div>
+    </div>
+  </div>
+
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>Python <span class="muted">· Harvard CS50P certificate <!-- TODO: link the certificate once uploaded --> · passed the LinkedIn Python skill assessment</span></li>
+    <li>PyTorch <span class="muted">· training models, basic object detection</span></li>
+    <li>Generative AI <span class="muted">· synthetic data for computer vision</span></li>
+    <li>Claude Code <span class="muted">· I build most things with it, including this site</span></li>
+  </ul>
+
+  <h2>Recently</h2>
+  <ul class="list">
+    <li><a href="projects.html#potholes">Synthetic potholes for Irish weather</a><span class="date">BTYSTE 2025</span></li>
+    <li><a href="projects.html#algorithmic-bias">Investigating algorithmic bias</a><span class="date">BTYSTE 2023</span></li>
+  </ul>
+
+  <h2>Say hello</h2>
+  <p>I'm easy to reach and I reply quickly. <a href="contact.html">Get in touch</a>.</p>
+</main>
+
+<footer>
+  <a href="mailto:cian.agi28@gmail.com">cian.agi28@gmail.com</a>
+</footer>
+</div>
+<script src="js/books.js"></script>
+<script src="js/ideamap.js"></script>
+<script>
+  IdeaMap(document.getElementById("map"), {
+    themes: THEMES,
+    books: BOOKS,
+    caption: document.getElementById("map-caption"),
+    hint: "Every dot is a book I've read or want to read. Hover one, or click an idea to see the books behind it.",
+    onTheme: (k) => (location.href = "books.html#theme=" + k),
+    onBook: (id) => (location.href = "books.html#" + id),
+  });
+</script>
+</body>
+</html>

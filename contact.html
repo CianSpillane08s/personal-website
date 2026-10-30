@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Cian Spillane</title>
+<meta name="description" content="Cian Spillane, a 17-year-old student writing about startups, growth, AI and markets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="name" href="index.html">Cian Spillane</a>
+  <nav>
+    <a href="essays.html">Essays</a>
+    <a href="books.html">Books</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+</header>
+<main>
+  <h1>Contact</h1>
+  <p>I'm easy to reach and I reply quickly, so get in touch about anything I've written or built, or just to talk.</p>
+
+  <h2>Email</h2>
+  <div class="contact-email">
+    <a href="mailto:cian.agi28@gmail.com">cian.agi28@gmail.com</a>
+    <button class="copy" type="button">Copy</button>
+  </div>
+
+  <h2>Elsewhere</h2>
+  <ul class="list">
+    <li><a href="https://github.com/CianSpillane08s">GitHub</a><span class="date">CianSpillane08s</span></li>
+    <!-- TODO: paste your LinkedIn profile URL into href -->
+    <li><a href="#">LinkedIn</a><span class="date">Cian Spillane</span></li>
+    <!-- TODO: check your exact X handle, then update both the link and the text -->
+    <li><a href="https://x.com/mlbro9865">X / Twitter</a><span class="date">@mlbro9865</span></li>
+  </ul>
+</main>
+
+<footer>
+  <a href="mailto:cian.agi28@gmail.com">cian.agi28@gmail.com</a>
+</footer>
+</div>
+<script>
+  document.querySelector(".copy").addEventListener("click", async (e) => {
+    try {
+      await navigator.clipboard.writeText("cian.agi28@gmail.com");
+      e.target.textContent = "Copied";
+      setTimeout(() => (e.target.textContent = "Copy"), 1600);
+    } catch (err) {}
+  });
+</script>
+</body>
+</html>

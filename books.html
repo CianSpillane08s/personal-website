@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Books · Cian Spillane</title>
+<meta name="description" content="Cian Spillane, a 17-year-old student writing about startups, growth, AI and markets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="name" href="index.html">Cian Spillane</a>
+  <nav>
+    <a href="essays.html">Essays</a>
+    <a href="books.html" aria-current="page">Books</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <h1>Books</h1>
+  <p class="muted">What I've read, what I'm reading, and what's next, with a few honest thoughts on each.</p>
+
+  <div class="map-wrap">
+    <div id="map"></div>
+    <div class="map-foot">
+      <div id="map-caption" aria-live="polite"></div>
+      <div class="legend"><span><i class="read"></i>read</span><span><i class="reading"></i>reading</span><span><i></i>next</span></div>
+    </div>
+  </div>
+
+  <p class="filter" id="filter" hidden>Showing books about <strong></strong> <button type="button">Show all</button></p>
+
+  <div id="shelf"></div>
+  <noscript><p class="muted">The bookshelf needs JavaScript to display.</p></noscript>
+</main>
+
+<footer>
+  <a href="mailto:cian.agi28@gmail.com">cian.agi28@gmail.com</a>
+</footer>
+</div>
+<script src="js/books.js"></script>
+<script src="js/ideamap.js"></script>
+<script src="js/bookshelf.js"></script>
+</body>
+</html>
