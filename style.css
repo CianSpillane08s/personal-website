@@ -258,7 +258,7 @@ section[data-status="next"] .book { padding: 16px 0; }
 
 /* ---------- projects ---------- */
 .project { padding: 18px 0; border-bottom: 1px solid var(--faint); }
-.project:first-of-type { border-top: 1px solid var(--faint); }
+h2 + .project, p + .project { border-top: 1px solid var(--faint); }
 .project p { margin: 4px 0 0; font-size: 0.95rem; }
 .project .tags {
   font-family: var(--sans);
